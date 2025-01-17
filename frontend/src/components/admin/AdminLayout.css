@@ -1,0 +1,121 @@
+/* Admin Layout Styles */
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .main-row {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sidebar a:hover,
+  .sidebar a.active {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    background-color: #ecf0f1;
+    padding: 30px;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .sidebar.open + .main-content {
+    margin-left: 0;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      left: -100%;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  
