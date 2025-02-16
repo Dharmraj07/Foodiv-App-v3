@@ -1,7 +1,7 @@
 # Foodiv App v3
 
 ## Overview
-**Foodiv App v3** is a food ordering and recipe management application built using the **MERN stack**. The app includes an **admin panel** for managing categories, recipes, and other content. Firebase Authentication is used for admin login.
+**Foodiv App v3** is a food ordering and recipe management application built using the **MERN stack**. The app includes an **admin panel** for managing categories, recipes, and other content. 
 
 ## Key Features
 ### User Interface
@@ -10,7 +10,7 @@
 - Responsive design using **React Bootstrap**.
 
 ### Admin Panel
-- **Authentication**: Admin login via Firebase Authentication.
+- **Authentication**: Admin login 
 - **Category Management**: Add, update, and delete food categories with images.
 - **Recipe Management**: Add and update recipes with name, category, ingredients, price, and images.
 
@@ -56,7 +56,7 @@
 Ensure you have the following installed:
 - **Node.js** (Latest LTS version recommended)
 - **MongoDB** (Locally or via MongoDB Atlas)
-- **Firebase Project** (For authentication)
+
 
 ### Steps to Run
 #### Clone the Repository:
@@ -88,25 +88,7 @@ Ensure you have the following installed:
    npm run dev
    ```
 
-### Frontend Setup
-1. Navigate to the frontend folder:
-   ```sh
-   cd frontend
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Create a **.env** file for frontend:
-   ```env
-   VITE_FIREBASE_API_KEY=your_firebase_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-   VITE_BACKEND_URL=http://localhost:5000
-   ```
-4. Start the frontend:
-   ```sh
-   npm run dev
-   ```
+
 
 ## Usage
 - **Admin Login**: Navigate to the admin panel and log in using Firebase Authentication.
@@ -114,25 +96,5 @@ Ensure you have the following installed:
 - **User Interaction**: Users can browse food categories and view recipes.
 - **Order & Payment**: Users can add items to their cart, checkout securely, and track their orders.
 
-## Deployment
-### Backend Deployment
-- Use platforms like **Render**, **Vercel**, or **DigitalOcean**.
-- Set environment variables in the deployment platform.
 
-### Frontend Deployment
-- Deploy on **Vercel** or **Netlify**.
-- Update `VITE_BACKEND_URL` in `.env` with the deployed backend URL.
-
-## Contribution
-- Fork the repository.
-- Create a new feature branch: `git checkout -b feature-name`.
-- Commit your changes: `git commit -m "Add new feature"`.
-- Push to the branch: `git push origin feature-name`.
-- Open a Pull Request.
-
-## License
-This project is open-source and available under the **MIT License**.
-
----
-For any queries, feel free to open an issue in the repository!
 
